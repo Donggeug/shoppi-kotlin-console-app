@@ -2,8 +2,8 @@ package screen
 
 class ShoppingCategory {
     fun showCategories() {
-        val categoryies = arrayOf("패션", "전자기기", "반려동용품")
-        for (category in categoryies) {
+        val categories = arrayOf("패션", "전자기기", "반려동물용품")
+        for (category in categories) {
             println(category)
         }
 
@@ -15,9 +15,10 @@ class ShoppingCategory {
             selectedCategory = readLine()
         }
         if (selectedCategory == "#") {
-            // TODO 1. 장바구니 이동
+            val shoppingCart = ShoppingCart()
+            shoppingCart.showCartItems()
         } else {
-            if (categoryies.contains(selectedCategory)) {
+            if (categories.contains(selectedCategory)) {
                 val shoppingProductList = ShoppingProductList()
                 shoppingProductList.showProducts(selectedCategory)
             } else {
