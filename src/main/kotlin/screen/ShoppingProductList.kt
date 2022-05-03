@@ -1,5 +1,6 @@
 package screen
 
+import LINE_DIVIDER
 import data.CartItems
 import data.Product
 import extensions.getNotEmptyInt
@@ -23,7 +24,7 @@ class ShoppingProductList {
         val categoryProducts = categories[selectedCategory]
         if (!categoryProducts.isNullOrEmpty()){
             println("""
-                ***===============================***
+                $LINE_DIVIDER
                 선택하신 [$selectedCategory] 카테고리 상품입니다.
                 """.trimIndent())
 
