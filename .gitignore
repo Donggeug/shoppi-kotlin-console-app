@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.ideaf
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.gradle
